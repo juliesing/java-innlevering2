@@ -4,9 +4,14 @@ public class Matriser {
 
 	// a) 
 	public static void skrivUt(int[][] matrise) {
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++) {
+				System.out.print(matrise[i][j] + " ");
+				
+			}
+			System.out.println();
+		}
 		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
 	}
 
 	// b) 
@@ -30,9 +35,16 @@ public class Matriser {
 
 	// c) 
 	public static int[][] skaler(int tall, int[][] matrise) {
+		int[][] resultat = new int[matrise.length][matrise[0].length];
 		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skaler ikke implementert");
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++) {
+				resultat[i][j] = matrise[i][j] * tall;
+				
+			}
+		}
+		
+		return resultat;
 	
 	}
 

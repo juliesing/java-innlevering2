@@ -17,9 +17,18 @@ public class Tabeller {
 
 	// b) 
 	public static String tilStreng(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
+		StringBuilder sb = new StringBuilder();
+		sb.append("[");
+		
+		for (int i = 0; i < tabell.length; i++) {
+			sb.append(tabell[i]); 
+			if (i < tabell.length - 1) {
+				sb.append(",");
+			}
+		}
+		
+		sb.append("]");
+		return sb.toString();
 	}
 
 	// c) 
@@ -37,10 +46,12 @@ public class Tabeller {
 
 	// d) 
 	public static boolean finnesTall(int[] tabell, int tall) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden finnesTall ikke implementert");
-
+		for (int i = 0; i < tabell.length; i++) {
+			if (tabell[i] == tall) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	// e) 
@@ -59,9 +70,13 @@ public class Tabeller {
 
 	// f) 
 	public static int[] reverser(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
+		int[] reversert = new int[tabell.length];
+		
+		for (int i =0; i < tabell.length; i++) {
+			reversert[i] = tabell[tabell.length - 1 - i];
+		}
+		
+		return reversert;
 	}
 
 	// g) 
@@ -75,14 +90,23 @@ public class Tabeller {
 		    }
 		    
 		    return true;  
-		}
+	}
 
 
 	// h) 
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden settSammen ikke implementert");
-
+		int[] sammensatt = new int[tabell1.length + tabell2.length];
+		
+		for (int i =0; i< tabell1.length; i++) {
+			sammensatt[i] = tabell1[i];
+		}
+		
+		for (int i =0; i< tabell2.length; i++) {
+			sammensatt[tabell1.length + i] = tabell2[i];
 	}
+		return sammensatt;
+	}
+	
 }
+
+
