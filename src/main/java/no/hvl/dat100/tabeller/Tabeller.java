@@ -2,7 +2,7 @@ package no.hvl.dat100.tabeller;
 
 public class Tabeller {
 
-	// a) Sigrid
+	// a) 
 	public static void skrivUt(int[] tabell) {
 
 		System.out.print("[");
@@ -15,27 +15,27 @@ public class Tabeller {
 		
 	}
 
-	// b) Julie
+	// b) 
 	public static String tilStreng(int[] tabell) {
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
 	}
 
-	// c) Sigrid
+	// c) 
 	public static int summer(int[] tabell) {
 		
-		    int sum = 0;  // Initialiserer en variabel for å holde på summen
+		    int sum = 0;  
 		    
-		    for (int tall : tabell) {  // Går gjennom hvert element i tabellen
-		        sum += tall;  // Legger til hvert element til summen
+		    for (int tall : tabell) {  
+		        sum += tall;  
 		        
 		    }
 		    
-		    return sum;  // Returnerer den totale summen
+		    return sum; 
 	}
 
-	// d) Julie
+	// d) 
 	public static boolean finnesTall(int[] tabell, int tall) {
 
 		// TODO
@@ -43,42 +43,42 @@ public class Tabeller {
 
 	}
 
-	// e) Sigrid
+	// e) 
 	public static int posisjonTall(int[] tabell, int tall) {
 
-		    for (int i = 0; i < tabell.length; i++) {  // Går gjennom hvert element i tabellen
+		    for (int i = 0; i < tabell.length; i++) {  
 		    	
-		        if (tabell[i] == tall) {  // Sjekker om elementet er likt tallet vi leter etter
-		            return i;  // Returnerer indeksen hvis vi finner tallet
-		        }
+		        if (tabell[i] == tall) {  
+		            return i; 
+		            }
 		    }
 		    
-		    return -1;  // Returnerer -1 hvis tallet ikke finnes i tabellen
+		    return -1;  
 		}
 
 
-	// f) Julie
+	// f) 
 	public static int[] reverser(int[] tabell) {
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
 	}
 
-	// g) Sigrid
+	// g) 
 	public static boolean erSortert(int[] tabell) {
 
-		    for (int i = 0; i < tabell.length - 1; i++) {  // Går gjennom tabellen, men stopper ved nest siste element
+		    for (int i = 0; i < tabell.length - 1; i++) {  
 		    	
-		        if (tabell[i] > tabell[i + 1]) {  // Sjekker om et element er større enn det neste
-		            return false;  // Hvis et element er større enn det neste, er tabellen ikke sortert
+		        if (tabell[i] > tabell[i + 1]) {  
+		            return false;  
 		        }
 		    }
 		    
-		    return true;  // Returnerer true hvis ingen elementer bryter sorteringsregelen
+		    return true;  
 		}
 
 
-	// h) Julie
+	// h) 
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
 		// TODO
